@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albert's Drone Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="header" id="Home">
+        <nav>
+            <a href="index.html" aria-label="Home">
+                <img src="logo.png" alt="Albert's Drone Services logo">
+            </a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="services.html">OUR SERVICES</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="text-box">
+            <h1>Albert's Drone Services</h1>
+            <p>Where Beauty Is Defined By What You See From Above</p>
+            <a href="gallery.html" class="hero-btn">GALLERY</a>
+
+        </div>
+    </section>
+    <section class="about" id="About-us">
+        <h1>About Us</h1>
+        <p>Albert's Drone Services is a leading provider of aerial photography and videography services.<br> We specialize in capturing stunning visuals from above, offering a unique perspective for various industries including real estate,<br> events, and commercial projects. Our team of skilled drone pilots and photographers<br>are dedicated to delivering high-quality content that exceeds our clients' expectations.<br> With state-of-the-art equipment and a passion for creativity, we strive to bring your vision to life through the art of drone photography.<br> Whether you're looking to showcase a property, document an event, or create captivating marketing materials,<br> Albert's Drone Services is your trusted partner for all your aerial imaging needs.</p>
+    </section>
+
+    <section class="Services" id="Our-Services">
+    <h1>Our Services</h1>
+        <p>  We offer a wide range of drone services to meet the diverse needs of our clients. Our services include:</p>
+       
+        <div class="row">
+            <div class="services-col">
+                <h2>Aerial Photography and Videography</h2>
+                <p>We specialize in capturing stunning<br>aerial photos and videos for various purposes</p>
+                </div>
+            <div class="services-col">
+             <h2>Real Estate Photography</h2>
+                <p>Our drone services are perfect for showcasing<br> properties from unique angles, providing potential buyers<br> with a comprehensive view of the property and its surroundings.</p>
+                </div>
+            <div class="services-col">
+                <h2>Event Coverage</h2>
+                <p>We provide aerial coverage for events<br> such as weddings, concerts, and sports events,<br> capturing memorable moments from a bird's-eye view.</p>
+                </div>
+            <div class="services-col">
+                <h2>Commercial Projects</h2>
+                <p>Our drone services are ideal for commercial<br>projects, including construction site monitoring,<br>infrastructure inspections, and promotional videos for businesses.</p>
+                
+            </div>
+        </div>
+                    
+    </section>
+
+<!-- Gallery Section -->
+
+    <section class="gallery" id="My-gallery">
+
+        <h1>Gallery</h1>
+            <p>Explore our gallery to see the breathtaking visuals captured by our drones.<br> From stunning landscapes to dynamic event coverage,<br> our gallery showcases the versatility and creativity of our aerial photography and videography services.</p>
+            <div class="row">
+                <div class="gallery-container">
+                          <div class="gallery-item"><img src="images/Pic 1.jpg" alt="Gallery Image 1"></div>
+                          <div class="gallery-item"><img src="images/Pic 2.jpg" alt="Gallery Image 2"></div>
+                          <div class="gallery-item"><img src="images/Pic 3.jpg" alt="Gallery Image 3"></div>
+                          <div class="gallery-item"><img src="images/Pic 4.jpg" alt="Gallery Image 4"></div>
+                          <div class="gallery-item"><img src="images/Pic 5.jpg" alt="Gallery Image 5"></div>
+                          <div class="gallery-item"><img src="images/Pic 6.jpg" alt="Gallery Image 6"></div>
+                          <div class="gallery-item"><img src="images/Pic 7.jpg" alt="Gallery Image 7"></div>
+                          <div class="gallery-item"><img src="images/Pic 8.jpg" alt="Gallery Image 8"></div>
+                          <div class="gallery-item"><img src="images/Pic 9.jpg" alt="Gallery Image 9"></div>
+                          <div class="gallery-item"><img src="images/Pic 10.jpg" alt="Gallery Image 10"></div>
+                          <div class="gallery-item"><img src="images/Pic 11.jpg" alt="Gallery Image 11"></div>
+                          <div class="gallery-item"><img src="images/Pic 12.jpg" alt="Gallery Image 12"></div>
+                          <div class="gallery-item"><img src="images/Pic 13.jpg" alt="Gallery Image 13"></div>
+                          <div class="gallery-item"><img src="images/Pic 14.jpg" alt="Gallery Image 14"></div>
+                          <div class="gallery-item"><img src="images/Pic 15.jpg" alt="Gallery Image 15"></div>
+                          <div class="gallery-item"><img src="images/Pic 16.jpg" alt="Gallery Image 16"></div>
+                          <div class="gallery-item"><img src="images/Pic 17.jpg" alt="Gallery Image 17"></div>
+                </div>
+                
+
+
+
+
+    </section>
+
+<!-- Contact Us Section -->
+    <section class="contact" id="Contact-us">
+        <h1>Contact Us</h1>
+        <p>Get in touch with Albert's Drone Services for all your aerial photography and videography needs.</p>
+        <div class="contact-info">
+            <p>Email: princepoldi4@gmail.com</p>
+            <p>Phone: (+233) 570721694</p>
+            <p>Address: No. 05 Owula Hansen Lane,Tesano Accra,Ghana</p>
+        </div>
+    </section>
+
+<!-- Modal for Gallery Images -->
+<div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div id="caption"></div>
+</div>
+
+<script>
+
+var modal = document.getElementById('imageModal');
+
+var modalImg = document.getElementById("modalImage");
+var captionText = document.getElementById("caption");
+
+var galleryImages = document.querySelectorAll('.gallery-item img');
+
+galleryImages.forEach(function(img) {
+    img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+});
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>

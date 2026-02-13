@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Albert's Drone Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="header" id="Home">
+        <nav>
+            <a href="index.html" aria-label="Home">
+                <img src="logo.png" alt="Albert's Drone Services logo">
+            </a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="services.html">OUR SERVICES</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="text-box">
+            <h1>Gallery</h1>
+            <p>Breathtaking Aerial Visuals Captured by Our Expert Team</p>
+            <a href="contact.html" class="hero-btn">BOOK A SHOOT</a>
+        </div>
+    </section>
+
+<!-- Gallery Section -->
+    <section class="gallery" id="My-gallery">
+        <h1>Gallery</h1>
+            <p>Explore our gallery to see the breathtaking visuals captured by our drones. From stunning landscapes to dynamic event coverage, our gallery showcases the versatility and creativity of our aerial photography and videography services.</p>
+            <div class="row">
+                <div class="gallery-container">
+                          <div class="gallery-item"><img src="images/Pic 1.jpg" alt="Gallery Image 1"></div>
+                          <div class="gallery-item"><img src="images/Pic 2.jpg" alt="Gallery Image 2"></div>
+                          <div class="gallery-item"><img src="images/Pic 3.jpg" alt="Gallery Image 3"></div>
+                          <div class="gallery-item"><img src="images/Pic 4.jpg" alt="Gallery Image 4"></div>
+                          <div class="gallery-item"><img src="images/Pic 5.jpg" alt="Gallery Image 5"></div>
+                          <div class="gallery-item"><img src="images/Pic 6.jpg" alt="Gallery Image 6"></div>
+                          <div class="gallery-item"><img src="images/Pic 7.jpg" alt="Gallery Image 7"></div>
+                          <div class="gallery-item"><img src="images/Pic 8.jpg" alt="Gallery Image 8"></div>
+                          <div class="gallery-item"><img src="images/Pic 9.jpg" alt="Gallery Image 9"></div>
+                          <div class="gallery-item"><img src="images/Pic 10.jpg" alt="Gallery Image 10"></div>
+                          <div class="gallery-item"><img src="images/Pic 11.jpg" alt="Gallery Image 11"></div>
+                          <div class="gallery-item"><img src="images/Pic 12.jpg" alt="Gallery Image 12"></div>
+                          <div class="gallery-item"><img src="images/Pic 13.jpg" alt="Gallery Image 13"></div>
+                          <div class="gallery-item"><img src="images/Pic 14.jpg" alt="Gallery Image 14"></div>
+                          <div class="gallery-item"><img src="images/Pic 15.jpg" alt="Gallery Image 15"></div>
+                          <div class="gallery-item"><img src="images/Pic 16.jpg" alt="Gallery Image 16"></div>
+                          <div class="gallery-item"><img src="images/Pic 17.jpg" alt="Gallery Image 17"></div>
+                </div>
+            </section>
+
+<!-- Modal for Gallery Images -->
+<div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div id="caption"></div>
+</div>
+
+<script>
+var modal = document.getElementById('imageModal');
+var modalImg = document.getElementById("modalImage");
+var captionText = document.getElementById("caption");
+var galleryImages = document.querySelectorAll('.gallery-item img');
+
+galleryImages.forEach(function(img) {
+    img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+});
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<!-- Contact Us Section -->
+    <section class="contact" id="Contact-us">
+        <h1>Love Our Work?</h1>
+        <p>Ready to create stunning aerial visuals for your project? Contact us today!</p>
+        <div class="contact-info">
+            <p>Email: princepoldi4@gmail.com</p>
+            <p>Phone: (+233) 570721694</p>
+            <p>Address: No. 05 Owula Hansen Lane, Tesano Accra, Ghana</p>
+        </div>
+        <a href="contact.html" class="hero-btn">CONTACT US</a>
+    </section>
+</body>
+</html>
