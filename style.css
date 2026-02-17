@@ -408,18 +408,18 @@ h1{
     }
     
     nav img {
-        width: 120px;
+        width: 240px;
         height: auto;
         margin-bottom: 0;
         display: block;
         object-fit: contain;
-        margin-left: 50px;
+        margin-left: 0;
     }
     
     .menu-btn {
         display: block;
         position: absolute;
-        left: 15px;
+        right: 15px;
         top: 50%;
         transform: translateY(-50%);
         font-size: 24px;
@@ -552,7 +552,7 @@ h1{
 
 @media(max-width: 480px) {
     nav img {
-        width: 150px;
+        width: 300px;
     }
     
     .text-box h1 {
