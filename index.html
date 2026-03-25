@@ -3,7 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Albert's Drone Services</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Professional aerial photography and videography services in Ghana. Albert's Drone Services offers stunning drone footage for real estate, events, and commercial projects.">
+    <meta name="keywords" content="drone services, aerial photography, videography, Ghana, real estate drone, event coverage, commercial drone projects, Albert's Drone Services">
+    <meta name="author" content="Albert's Drone Services">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Albert's Drone Services - Professional Aerial Photography">
+    <meta property="og:description" content="Professional aerial photography and videography services in Ghana. Stunning drone footage for real estate, events, and commercial projects.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://princepoldi.github.io/Albert-Asante-Yeboah/">
+    <meta property="og:image" content="https://princepoldi.github.io/Albert-Asante-Yeboah/logo.png">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Albert's Drone Services - Professional Aerial Photography">
+    <meta name="twitter:description" content="Professional aerial photography and videography services in Ghana.">
+    <meta name="twitter:image" content="https://princepoldi.github.io/Albert-Asante-Yeboah/logo.png">
+    
+    <title>Albert's Drone Services - Professional Aerial Photography & Videography</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚁</text></svg>">
     <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚁</text></svg>">
@@ -14,13 +34,14 @@
         <div class="drone-loader"></div>
     </div>
 
-    <section class="header" id="Home">
-        <nav>
-            <a href="index.html" aria-label="Home">
+    <header class="site-header" role="banner">
+        <nav role="navigation" aria-label="Main navigation">
+            <a href="index.html" class="logo-link" aria-label="Home">
                 <img src="logo.png" alt="Albert's Drone Services logo">
             </a>
+            <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
             <div class="nav-links" id="navLinks">
-                <div class="close-btn" id="closeBtn">&times;</div>
+                <button class="close-btn" id="closeBtn" aria-label="Close navigation menu">&times;</button>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT US</a></li>
@@ -29,157 +50,154 @@
                     <li><a href="contact.html">CONTACT US</a></li>
                 </ul>
             </div>
-            <div class="menu-btn" id="menuBtn">&#9776;</div>
         </nav>
-        <div class="text-box fade-in">
-            <h1>Albert's Drone Services</h1>
-            <p>Where Beauty Is Defined By What You See From Above</p>
-            <a href="gallery.html" class="hero-btn">GALLERY</a>
-
-        </div>
-    </section>
-    <section class="about fade-in fade-in-delay-1" id="About-us">
-        <h1>About Us</h1>
-        <p>Albert's Drone Services is a leading provider of aerial photography and videography services.<br> We specialize in capturing stunning visuals from above, offering a unique perspective for various industries including real estate,<br> events, and commercial projects. Our team of skilled drone pilots and photographers<br>are dedicated to delivering high-quality content that exceeds our clients' expectations.<br> With state-of-the-art equipment and a passion for creativity, we strive to bring your vision to life through the art of drone photography.<br> Whether you're looking to showcase a property, document an event, or create captivating marketing materials,<br> Albert's Drone Services is your trusted partner for all your aerial imaging needs.</p>
-    </section>
-
-    <section class="Services fade-in fade-in-delay-2" id="Our-Services">
-    <h1>Our Services</h1>
-        <p>  We offer a wide range of drone services to meet the diverse needs of our clients. Our services include:</p>
-       
-        <div class="row">
-            <div class="services-col fade-in fade-in-delay-3">
-                <h2>Aerial Photography and Videography</h2>
-                <p>We specialize in capturing stunning<br>aerial photos and videos for various purposes</p>
-                </div>
-            <div class="services-col fade-in fade-in-delay-3">
-             <h2>Real Estate Photography</h2>
-                <p>Our drone services are perfect for showcasing<br> properties from unique angles, providing potential buyers<br> with a comprehensive view of the property and its surroundings.</p>
-                </div>
-            <div class="services-col fade-in fade-in-delay-3">
-                <h2>Event Coverage</h2>
-                <p>We provide aerial coverage for events<br> such as weddings, concerts, and sports events,<br> capturing memorable moments from a bird's-eye view.</p>
-                </div>
-            <div class="services-col fade-in fade-in-delay-3">
-                <h2>Commercial Projects</h2>
-                <p>Our drone services are ideal for commercial<br>projects, including construction site monitoring,<br>infrastructure inspections, and promotional videos for businesses.</p>
-                
+        <div class="hero-section" role="main">
+            <div class="text-box fade-in">
+                <h1>Albert's Drone Services</h1>
+                <p>Where Beauty Is Defined By What You See From Above</p>
+                <a href="gallery.html" class="hero-btn">GALLERY</a>
             </div>
         </div>
-                    
-    </section>
+    </header>
+    <main>
+        <section class="about fade-in fade-in-delay-1" id="About-us">
+            <div class="container">
+                <h1>About Us</h1>
+                <p>Albert's Drone Services is a leading provider of aerial photography and videography services. We specialize in capturing stunning visuals from above, offering a unique perspective for various industries including real estate, events, and commercial projects. Our team of skilled drone pilots and photographers are dedicated to delivering high-quality content that exceeds our clients' expectations. With state-of-the-art equipment and a passion for creativity, we strive to bring your vision to life through the art of drone photography. Whether you're looking to showcase a property, document an event, or create captivating marketing materials, Albert's Drone Services is your trusted partner for all your aerial imaging needs.</p>
+            </div>
+        </section>
 
-<!-- Gallery Section -->
-
-    <section class="gallery fade-in fade-in-delay-1" id="My-gallery">
-
-        <h1>Gallery</h1>
-            <p>Explore our gallery to see the breathtaking visuals captured by our drones.<br> From stunning landscapes to dynamic event coverage,<br> our gallery showcases the versatility and creativity of our aerial photography and videography services.</p>
-            <div class="row">
-                <div class="gallery-container">
-                          <div class="gallery-item"><img src="images/Pic 1.jpg" alt="Gallery Image 1"></div>
-                          <div class="gallery-item"><img src="images/Pic 2.jpg" alt="Gallery Image 2"></div>
-                          <div class="gallery-item"><img src="images/Pic 3.jpg" alt="Gallery Image 3"></div>
-                          <div class="gallery-item"><img src="images/Pic 4.jpg" alt="Gallery Image 4"></div>
-                          <div class="gallery-item"><img src="images/Pic 5.jpg" alt="Gallery Image 5"></div>
-                          <div class="gallery-item"><img src="images/Pic 6.jpg" alt="Gallery Image 6"></div>
-                          <div class="gallery-item"><img src="images/Pic 7.jpg" alt="Gallery Image 7"></div>
-                          <div class="gallery-item"><img src="images/Pic 8.jpg" alt="Gallery Image 8"></div>
-                          <div class="gallery-item"><img src="images/Pic 9.jpg" alt="Gallery Image 9"></div>
-                          <div class="gallery-item"><img src="images/Pic 10.jpg" alt="Gallery Image 10"></div>
-                          <div class="gallery-item"><img src="images/Pic 11.jpg" alt="Gallery Image 11"></div>
-                          <div class="gallery-item"><img src="images/Pic 12.jpg" alt="Gallery Image 12"></div>
-                          <div class="gallery-item"><img src="images/Pic 13.jpg" alt="Gallery Image 13"></div>
-                          <div class="gallery-item"><img src="images/Pic 14.jpg" alt="Gallery Image 14"></div>
-                          <div class="gallery-item"><img src="images/Pic 15.jpg" alt="Gallery Image 15"></div>
-                          <div class="gallery-item"><img src="images/Pic 16.jpg" alt="Gallery Image 16"></div>
-                          <div class="gallery-item"><img src="images/Pic 17.jpg" alt="Gallery Image 17"></div>
+        <section class="services fade-in fade-in-delay-2" id="Our-Services">
+            <div class="container">
+                <h1>Our Services</h1>
+                <p>We offer a wide range of drone services to meet the diverse needs of our clients. Our services include:</p>
+                <div class="row">
+                    <article class="services-col fade-in fade-in-delay-3">
+                        <h2>Aerial Photography and Videography</h2>
+                        <p>We specialize in capturing stunning aerial photos and videos for various purposes</p>
+                    </article>
+                    <article class="services-col fade-in fade-in-delay-3">
+                        <h2>Real Estate Photography</h2>
+                        <p>Our drone services are perfect for showcasing properties from unique angles, providing potential buyers with a comprehensive view of the property and its surroundings.</p>
+                    </article>
+                    <article class="services-col fade-in fade-in-delay-3">
+                        <h2>Event Coverage</h2>
+                        <p>We provide aerial coverage for events such as weddings, concerts, and sports events, capturing memorable moments from a bird's-eye view.</p>
+                    </article>
+                    <article class="services-col fade-in fade-in-delay-3">
+                        <h2>Commercial Projects</h2>
+                        <p>Our drone services are ideal for commercial projects, including construction site monitoring, infrastructure inspections, and promotional videos for businesses.</p>
+                    </article>
                 </div>
-                
+            </div>
+        </section>
 
+        <section class="gallery fade-in fade-in-delay-1" id="My-gallery">
+            <div class="container">
+                <h1>Gallery</h1>
+                <p>Explore our gallery to see the breathtaking visuals captured by our drones. From stunning landscapes to dynamic event coverage, our gallery showcases the versatility and creativity of our aerial photography and videography services.</p>
+                <div class="gallery-container">
+                    <div class="gallery-item"><img src="images/Pic 1.jpg" alt="Gallery Image 1" loading="lazy"></div>
+                    <div class="gallery-item"><img src="images/Pic 2.jpg" alt="Gallery Image 2" loading="lazy"></div>
+                    <div class="gallery-item"><img src="images/Pic 3.jpg" alt="Gallery Image 3" loading="lazy"></div>
+                    <div class="gallery-item"><img src="images/Pic 4.jpg" alt="Gallery Image 4" loading="lazy"></div>
+                    <div class="gallery-item"><img src="images/Pic 5.jpg" alt="Gallery Image 5" loading="lazy"></div>
+                    <div class="gallery-item"><img src="images/Pic 6.jpg" alt="Gallery Image 6" loading="lazy"></div>
+                    <div class="gallery-item"><img src="images/Pic 7.jpg" alt="Gallery Image 7" loading="lazy"></div>
+                    <div class="gallery-item"><img src="images/Pic 8.jpg" alt="Gallery Image 8" loading="lazy"></div>
+                    <div class="gallery-item"><img src="images/Pic 9.jpg" alt="Gallery Image 9" loading="lazy"></div>
+                    <div class="gallery-item"><img src="images/Pic 10.jpg" alt="Gallery Image 10" loading="lazy"></div>
+                    <div class="gallery-item"><img src="images/Pic 11.jpg" alt="Gallery Image 11" loading="lazy"></div>
+                    <div class="gallery-item"><img src="images/Pic 12.jpg" alt="Gallery Image 12" loading="lazy"></div>
+                    <div class="gallery-item"><img src="images/Pic 13.jpg" alt="Gallery Image 13" loading="lazy"></div>
+                    <div class="gallery-item"><img src="images/Pic 14.jpg" alt="Gallery Image 14" loading="lazy"></div>
+                    <div class="gallery-item"><img src="images/Pic 15.jpg" alt="Gallery Image 15" loading="lazy"></div>
+                    <div class="gallery-item"><img src="images/Pic 16.jpg" alt="Gallery Image 16" loading="lazy"></div>
+                    <div class="gallery-item"><img src="images/Pic 17.jpg" alt="Gallery Image 17" loading="lazy"></div>
+                </div>
+            </div>
+        </section>
 
+        <section class="contact fade-in fade-in-delay-2" id="Contact-us">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>Get in touch with Albert's Drone Services for all your aerial photography and videography needs.</p>
+                <div class="contact-info">
+                    <p><strong>Email:</strong> <a href="mailto:princepoldi4@gmail.com">princepoldi4@gmail.com</a></p>
+                    <p><strong>Phone:</strong> <a href="tel:+233570721694">(+233) 570721694</a></p>
+                    <p><strong>Address:</strong> No. 05 Owula Hansen Lane, Tesano Accra, Ghana</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
+    <!-- Modal for Gallery Images -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
 
-    </section>
+    <script>
+        // Loading screen management
+        window.addEventListener('load', function() {
+            const loadingScreen = document.getElementById('loadingScreen');
+            if (loadingScreen) {
+                loadingScreen.classList.add('fade-out');
+                setTimeout(() => {
+                    loadingScreen.style.display = 'none';
+                }, 500);
+            }
+        });
 
-<!-- Contact Us Section -->
-    <section class="contact fade-in fade-in-delay-2" id="Contact-us">
-        <h1>Contact Us</h1>
-        <p>Get in touch with Albert's Drone Services for all your aerial photography and videography needs.</p>
-        <div class="contact-info">
-            <p>Email: princepoldi4@gmail.com</p>
-            <p>Phone: (+233) 570721694</p>
-            <p>Address: No. 05 Owula Hansen Lane,Tesano Accra,Ghana</p>
-        </div>
-    </section>
+        // Modal functionality
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById("modalImage");
+        const captionText = document.getElementById("caption");
 
-<!-- Modal for Gallery Images -->
-<div id="imageModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="modalImage">
-    <div id="caption"></div>
-</div>
+        const galleryImages = document.querySelectorAll('.gallery-item img');
 
-<script>
-// Loading screen management
-window.addEventListener('load', function() {
-    const loadingScreen = document.getElementById('loadingScreen');
-    if (loadingScreen) {
-        loadingScreen.classList.add('fade-out');
-        setTimeout(() => {
-            loadingScreen.style.display = 'none';
-        }, 500);
-    }
-});
+        galleryImages.forEach(function(img) {
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+        });
 
-var modal = document.getElementById('imageModal');
+        const span = document.getElementsByClassName("close")[0];
 
-var modalImg = document.getElementById("modalImage");
-var captionText = document.getElementById("caption");
+        span.onclick = function() { 
+            modal.style.display = "none";
+        }
 
-var galleryImages = document.querySelectorAll('.gallery-item img');
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
 
-galleryImages.forEach(function(img) {
-    img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        captionText.innerHTML = this.alt;
-    }
-});
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById("menuBtn");
+        const closeBtn = document.getElementById("closeBtn");
+        const navLinks = document.getElementById("navLinks");
 
-var span = document.getElementsByClassName("close")[0];
+        menuBtn.onclick = function() {
+            navLinks.style.right = "0";
+        }
 
-span.onclick = function() { 
-    modal.style.display = "none";
-}
+        closeBtn.onclick = function() {
+            navLinks.style.right = "-200px";
+        }
 
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-
-// Mobile Menu Toggle
-var menuBtn = document.getElementById("menuBtn");
-var closeBtn = document.getElementById("closeBtn");
-var navLinks = document.getElementById("navLinks");
-
-menuBtn.onclick = function() {
-    navLinks.style.right = "0";
-}
-
-closeBtn.onclick = function() {
-    navLinks.style.right = "-200px";
-}
-
-// Close menu when clicking on a link
-var navLinksItems = document.querySelectorAll('.nav-links ul li a');
-navLinksItems.forEach(function(link) {
-    link.onclick = function() {
-        navLinks.style.right = "-200px";
-    }
-});
-</script>
+        // Close menu when clicking on a link
+        const navLinksItems = document.querySelectorAll('.nav-links ul li a');
+        navLinksItems.forEach(function(link) {
+            link.onclick = function() {
+                navLinks.style.right = "-200px";
+            }
+        });
+    </script>
 
 </body>
 </html>

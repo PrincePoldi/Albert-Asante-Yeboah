@@ -84,6 +84,30 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Container for better layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Skip to main content for accessibility */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #009688;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 0 0 4px 4px;
+    z-index: 10001;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
 /* Enhanced hover effects */
 .hero-btn {
     transition: all 0.3s ease;
