@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Albert's Drone Services</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚁</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚁</text></svg>">
 </head>
 <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="drone-loader"></div>
+    </div>
+
     <section class="header" id="Home">
         <nav>
             <a href="index.html" aria-label="Home">
@@ -24,36 +31,36 @@
             </div>
             <div class="menu-btn" id="menuBtn">&#9776;</div>
         </nav>
-        <div class="text-box">
+        <div class="text-box fade-in">
             <h1>Albert's Drone Services</h1>
             <p>Where Beauty Is Defined By What You See From Above</p>
             <a href="gallery.html" class="hero-btn">GALLERY</a>
 
         </div>
     </section>
-    <section class="about" id="About-us">
+    <section class="about fade-in fade-in-delay-1" id="About-us">
         <h1>About Us</h1>
         <p>Albert's Drone Services is a leading provider of aerial photography and videography services.<br> We specialize in capturing stunning visuals from above, offering a unique perspective for various industries including real estate,<br> events, and commercial projects. Our team of skilled drone pilots and photographers<br>are dedicated to delivering high-quality content that exceeds our clients' expectations.<br> With state-of-the-art equipment and a passion for creativity, we strive to bring your vision to life through the art of drone photography.<br> Whether you're looking to showcase a property, document an event, or create captivating marketing materials,<br> Albert's Drone Services is your trusted partner for all your aerial imaging needs.</p>
     </section>
 
-    <section class="Services" id="Our-Services">
+    <section class="Services fade-in fade-in-delay-2" id="Our-Services">
     <h1>Our Services</h1>
         <p>  We offer a wide range of drone services to meet the diverse needs of our clients. Our services include:</p>
        
         <div class="row">
-            <div class="services-col">
+            <div class="services-col fade-in fade-in-delay-3">
                 <h2>Aerial Photography and Videography</h2>
                 <p>We specialize in capturing stunning<br>aerial photos and videos for various purposes</p>
                 </div>
-            <div class="services-col">
+            <div class="services-col fade-in fade-in-delay-3">
              <h2>Real Estate Photography</h2>
                 <p>Our drone services are perfect for showcasing<br> properties from unique angles, providing potential buyers<br> with a comprehensive view of the property and its surroundings.</p>
                 </div>
-            <div class="services-col">
+            <div class="services-col fade-in fade-in-delay-3">
                 <h2>Event Coverage</h2>
                 <p>We provide aerial coverage for events<br> such as weddings, concerts, and sports events,<br> capturing memorable moments from a bird's-eye view.</p>
                 </div>
-            <div class="services-col">
+            <div class="services-col fade-in fade-in-delay-3">
                 <h2>Commercial Projects</h2>
                 <p>Our drone services are ideal for commercial<br>projects, including construction site monitoring,<br>infrastructure inspections, and promotional videos for businesses.</p>
                 
@@ -64,7 +71,7 @@
 
 <!-- Gallery Section -->
 
-    <section class="gallery" id="My-gallery">
+    <section class="gallery fade-in fade-in-delay-1" id="My-gallery">
 
         <h1>Gallery</h1>
             <p>Explore our gallery to see the breathtaking visuals captured by our drones.<br> From stunning landscapes to dynamic event coverage,<br> our gallery showcases the versatility and creativity of our aerial photography and videography services.</p>
@@ -96,7 +103,7 @@
     </section>
 
 <!-- Contact Us Section -->
-    <section class="contact" id="Contact-us">
+    <section class="contact fade-in fade-in-delay-2" id="Contact-us">
         <h1>Contact Us</h1>
         <p>Get in touch with Albert's Drone Services for all your aerial photography and videography needs.</p>
         <div class="contact-info">
@@ -114,6 +121,16 @@
 </div>
 
 <script>
+// Loading screen management
+window.addEventListener('load', function() {
+    const loadingScreen = document.getElementById('loadingScreen');
+    if (loadingScreen) {
+        loadingScreen.classList.add('fade-out');
+        setTimeout(() => {
+            loadingScreen.style.display = 'none';
+        }, 500);
+    }
+});
 
 var modal = document.getElementById('imageModal');
 
